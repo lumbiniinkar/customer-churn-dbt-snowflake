@@ -1,1 +1,28 @@
+sources:
+  - name: raw
+    database: E_COMMERCE_DB
+    schema: RAW
+
+    tables:
+      - name: raw_orders
+        columns:
+          - name: order_id
+            tests:
+              - not_null
+              - unique
+                    
+      - name: raw_order_items
+      - name: raw_customers
+        columns:
+          - name: customer_id
+            tests:
+              - not_null
+              - unique
+            
+
+      - name: raw_products
+      - name: raw_order_reviews
+      
+
+
 
